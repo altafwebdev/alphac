@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha College — Kot Momin · Est. Excellence</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ========== TOP BAR ========== -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>📞 +92 300 0000000</span>
+    <span class="divider">|</span>
+    <span>📍 Bhalwal Road, Kot Momin</span>
+  </div>
+  <div class="top-bar-right">
+    <span>DREAM HIGH</span>
+    <span class="dot">·</span>
+    <span>ACHIEVE HIGHER</span>
+    <span class="dot">·</span>
+    <span>BE ALPHA</span>
+  </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="logo-icon">
+      <img src="images/logo.jpg" alt="Alpha College" class="logo-img">
+    </div>
+    <div class="logo-text">
+      <span class="logo-name">Alpha College</span>
+      <span class="logo-sub">DREAM HIGH ACHIEVE HIGHER BE ALPHA</span>
+    </div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#home"        class="nav-link active">Home</a>
+    <a href="#about"       class="nav-link">About</a>
+    <a href="#programs"    class="nav-link">Programs</a>
+    <a href="#faculty"     class="nav-link">Faculty</a>
+    <a href="#campus"      class="nav-link">Campus Life</a>
+    <a href="#contact"     class="nav-link">Contact</a>
+    <a href="#admissions"  class="btn-apply">APPLY NOW →</a>
+  </div>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ========== HERO SLIDER ========== -->
+<section id="home" class="hero">
+  <!-- Slide 1 -->
+  <div class="hero-slide active" style="background-image:url('images/header.jpg')">
+    <div class="hero-slide-overlay"></div>
+    <div class="hero-slide-content">
+      <p class="hero-eyebrow">Alpha College, Kot Momin</p>
+      <h1 class="hero-title">Where minds are<br><em>shaped, and futures</em><br>are written.</h1>
+      <div class="hero-urdu-block">
+        <span class="urdu-line"></span>
+        <span class="urdu-label">اردو</span>
+        <span class="urdu-line"></span>
+      </div>
+      <p class="hero-urdu-text">جہاں ذہن سنوارے جاتے ہیں اور مستقبل لکھے جاتے ہیں</p>
+      <p class="hero-urdu-sub">روایت میں جڑی، کل کے لیے تیارہ۔ معیاری تعلیم، کردار سازی اور علی فضیلت — کوٹ مومن کے قلب میں۔</p>
+    </div>
+  </div>
+  <!-- Slide 2 -->
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80')">
+    <div class="hero-slide-overlay"></div>
+    <div class="hero-slide-content">
+      <p class="hero-eyebrow">Academic Excellence</p>
+      <h1 class="hero-title">Building tomorrow's<br><em>leaders through</em><br>quality education.</h1>
+      <div class="hero-urdu-block">
+        <span class="urdu-line"></span>
+        <span class="urdu-label">اردو</span>
+        <span class="urdu-line"></span>
+      </div>
+      <p class="hero-urdu-text">معیاری تعلیم کے ذریعے آنے والے کل کے رہنما تیار کر رہے ہیں</p>
+    </div>
+  </div>
+  <!-- Slide 3 -->
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1600&q=80')">
+    <div class="hero-slide-overlay"></div>
+    <div class="hero-slide-content">
+      <p class="hero-eyebrow">Science & Technology</p>
+      <h1 class="hero-title">Innovation begins<br><em>in our labs,</em><br>and in our minds.</h1>
+      <div class="hero-urdu-block">
+        <span class="urdu-line"></span>
+        <span class="urdu-label">اردو</span>
+        <span class="urdu-line"></span>
+      </div>
+      <p class="hero-urdu-text">جدت ہماری لیبز میں شروع ہوتی ہے اور ہمارے ذہنوں میں</p>
+    </div>
+  </div>
+
+  <!-- Slider Controls -->
+  <div class="hero-btns-wrap">
+    <a href="#programs" class="hero-btn-solid">Explore Programs →</a>
+    <a href="#admissions" class="hero-btn-outline">Begin Your Journey ↗</a>
+  </div>
+  <div class="hero-counter">
+    <span class="slide-num" id="slideNum">01</span>
+    <span class="slide-sep">/</span>
+    <span class="slide-total">03</span>
+  </div>
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="goToSlide(0)"></button>
+    <button class="hero-dot" onclick="goToSlide(1)"></button>
+    <button class="hero-dot" onclick="goToSlide(2)"></button>
+  </div>
+  <button class="hero-arrow left"  onclick="changeSlide(-1)">‹</button>
+  <button class="hero-arrow right" onclick="changeSlide(1)">›</button>
+</section>
+
+<!-- ========== STATS BAR ========== -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num"><span class="count" data-target="2500">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">STUDENTS ENROLLED</div>
+      <div class="stat-urdu">زیر تعلیم طلباء</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count" data-target="98">0</span><span class="stat-plus">%</span></div>
+      <div class="stat-label">SUCCESS RATE</div>
+      <div class="stat-urdu">کامیابی کا تناسب</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count" data-target="20">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">PROGRAMS OFFERED</div>
+      <div class="stat-urdu">تعلیمی پروگرام</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count" data-target="150">0</span><span class="stat-plus">+</span></div>
+      <div class="stat-label">DISTINCTIONS</div>
+      <div class="stat-urdu">اعزازات</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== ABOUT SECTION ========== -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left fade-up">
+        <p class="eyebrow-text">OUR STORY</p>
+        <h2 class="serif-title">A legacy of<br><em class="maroon-italic">trust & excellence.</em></h2>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="about-urdu">اعتماد اور عمدگی کی ایک وراثت — کوٹ مومن کا فخر</p>
+      </div>
+      <div class="about-right fade-up">
+        <p class="about-desc">Alpha College was founded on an unwavering belief: every young person in Kot Momin deserves access to world-class education. We combine academic rigour with character development, producing graduates who lead with confidence, integrity, and compassion.</p>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="about-urdu-text">الفا کالج اس یقین پر قائم ہے کہ کوٹ مومن کے ہر نوجوان کو عالمی معیار کی تعلیم ملنی چاہیے۔ ہم علمی مہارت کو کردار سازی کے ساتھ جوڑتے ہیں۔</p>
+        <div class="about-tags">
+          <span>✦ Est. Excellence</span>
+          <span>✦ Merit Based</span>
+          <span>✦ Character First</span>
+          <span>✦ Kot Momin's Pride</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROGRAMS SECTION ========== -->
+<section id="programs" class="programs-section">
+  <div class="container">
+    <div class="programs-top">
+      <div class="programs-left fade-up">
+        <p class="eyebrow-text">ACADEMIC PROGRAMS</p>
+        <h2 class="serif-title">Programs<br><em class="maroon-italic">crafted for<br>purpose.</em></h2>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="prog-urdu">سائنس سے لے کر کامرس اور ہیومینیٹیز تک — ہر پروگرام علم اور کردار دونوں کو پروان چڑھاتا ہے۔</p>
+      </div>
+      <div class="programs-right fade-up">
+        <p class="prog-desc">From science to commerce to the humanities — every program at Alpha is designed to develop both intellect and character. Choose the path that fits your ambition.</p>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="prog-desc-urdu">سائنس سے لے کر کامرس اور ہیومینیٹیز تک — ہر پروگرام علم اور کردار دونوں کو پروان چڑھاتا ہے۔</p>
+      </div>
+    </div>
+    <div class="programs-grid">
+
+      <div class="prog-card fade-up">
+        <div class="prog-card-top">
+          <span class="prog-num">— 01</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">Pre-Medical</h3>
+        <p class="prog-level">FSC · 2 YEARS</p>
+        <p class="prog-desc-card">For aspiring doctors and medical professionals — Biology, Chemistry, Physics.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">پری میڈیکل</p>
+        <p class="prog-urdu-desc">ڈاکٹر اور طبی پیشہ ورنے کے خواہشمند طلباء کے لیے۔</p>
+      </div>
+
+      <div class="prog-card fade-up">
+        <div class="prog-card-top">
+          <span class="prog-num">— 02</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">Pre-Engineering</h3>
+        <p class="prog-level">FSC · 2 YEARS</p>
+        <p class="prog-desc-card">Mathematics, Physics, and Chemistry foundation for tomorrow's engineers.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">پری انجینئرنگ</p>
+        <p class="prog-urdu-desc">مستقبل کے انجینئرز کے لیے ریاضی، طبیعات اور کیمیا کی بنیاد۔</p>
+      </div>
+
+      <div class="prog-card fade-up highlight-card">
+        <div class="prog-card-top">
+          <span class="prog-num">— 03</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">ICS · Computer Science</h3>
+        <p class="prog-level highlight-level">INTERMEDIATE · 2 YEARS</p>
+        <p class="prog-desc-card">Programming, mathematics, and physics for IT and software careers.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">آئی سی ایس</p>
+        <p class="prog-urdu-desc">آئی ٹی اور سافٹ ویئر کیریئرز کے لیے پروگرامنگ اور ریاضی۔</p>
+      </div>
+
+      <div class="prog-card fade-up">
+        <div class="prog-card-top">
+          <span class="prog-num">— 04</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">I.Com · Commerce</h3>
+        <p class="prog-level">INTERMEDIATE · 2 YEARS</p>
+        <p class="prog-desc-card">Accounting, business, and economics — gateway to a career in business.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">آئی کام</p>
+        <p class="prog-urdu-desc">اکاؤنٹنگ، کاروبار اور معاشیات — کاروباری کیریئر کا دروازہ۔</p>
+      </div>
+
+      <div class="prog-card fade-up">
+        <div class="prog-card-top">
+          <span class="prog-num">— 05</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">FA · Humanities</h3>
+        <p class="prog-level">INTERMEDIATE · 2 YEARS</p>
+        <p class="prog-desc-card">Arts, languages, and social sciences for diverse career paths.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">ایف اے</p>
+        <p class="prog-urdu-desc">متنوع کیریئرز کے لیے فنون، زبانیں اور سماجی علوم۔</p>
+      </div>
+
+      <div class="prog-card fade-up">
+        <div class="prog-card-top">
+          <span class="prog-num">— 06</span>
+          <span class="prog-arrow">↗</span>
+        </div>
+        <h3 class="prog-name">Matric · Science / Arts</h3>
+        <p class="prog-level">9TH & 10TH GRADE</p>
+        <p class="prog-desc-card">Strong academic foundation with focus on conceptual learning.</p>
+        <div class="prog-divider"></div>
+        <p class="prog-urdu-name">میٹرک</p>
+        <p class="prog-urdu-desc">نویں اور دسویں جماعت کے طلباء کے لیے مضبوط بنیاد۔</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== LEADERSHIP — DIRECTOR ========== -->
+<section id="leadership" class="leadership-section">
+  <div class="container">
+    <div class="leadership-header fade-up">
+      <p class="eyebrow-text">A WORD FROM LEADERSHIP</p>
+      <h2 class="serif-title large-title">Guidance from<br><em class="maroon-italic">those who lead.</em></h2>
+      <div class="urdu-divider centered">
+        <span class="u-line"></span>
+        <span class="u-label">قیادت کا پیغام</span>
+        <span class="u-line"></span>
+      </div>
+    </div>
+
+    <!-- Director 1 -->
+    <div class="leader-grid fade-up">
+      <div class="leader-img-side">
+        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=500&q=80" alt="Director" class="leader-img">
+      </div>
+      <div class="leader-text-side">
+        <span class="quote-mark">"</span>
+        <blockquote class="leader-quote">
+          Every student carries a spark of greatness. Our mission is to ignite that spark.
+        </blockquote>
+        <p class="leader-desc">At Alpha College, we believe education is not merely the transfer of knowledge — it is the cultivation of character. Through quality teaching, ethical values, and a nurturing environment, we prepare our youth to lead with confidence in the modern world.</p>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="leader-urdu">الفا کالج میں ہمارا یقین ہے کہ تعلیم محض علم کی منتقلی نہیں — یہ کردار کی آبیاری ہے۔ معیاری تعلیم، اعلی اخلاقی اقدار اور پروان چڑھانے والے ماحول کے ذریعے ہم اپنے نوجوانوں کو اعتماد کے ساتھ قیادت کے لیے تیار کرتے ہیں۔</p>
+        <div class="leader-info">
+          <strong>Syed Aoun Sherazi</strong>
+          <span>DIRECTOR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Director 2 -->
+    <div class="leader-grid reverse fade-up">
+      <div class="leader-text-side">
+        <span class="quote-mark">"</span>
+        <blockquote class="leader-quote">
+          Education is the most powerful tool that shapes character and creates opportunity.
+        </blockquote>
+        <p class="leader-desc">We are committed to academic excellence, innovation, and discipline. Our vision is to empower every Alpha student to dream high, work hard, and achieve higher — becoming not just successful individuals, but principled leaders of tomorrow.</p>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="leader-urdu">ہم علمی فضیلت، اختراع اور نظم و ضبط کے لیے پرعزم ہیں۔ ہمارا وژن یہ ہے کہ الفا کا ہر طالب علم بلند خواب دیکھے، محنت کرے اور بلند کامیابیاں حاصل کرے۔</p>
+        <div class="leader-info">
+          <strong>Prof. Qasim Raza (ADV)</strong>
+          <span>PRINCIPAL</span>
+        </div>
+      </div>
+      <div class="leader-img-side">
+        <img src="images/Professors/principle.jpg" alt="Principal" class="leader-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ADMISSIONS CTA ========== -->
+<section id="admissions" class="admissions-cta">
+  <div class="container">
+    <div class="cta-grid">
+      <div class="cta-left">
+        <p class="cta-eyebrow">ADMISSIONS OPEN · 2026</p>
+        <h2 class="cta-title">A new chapter<br><em>begins with you.</em></h2>
+        <p class="cta-desc">Limited seats across Matric, FSc, ICS, I.Com, and FA programs. Merit-based scholarships available for outstanding achievers.</p>
+        <p class="cta-urdu">میٹرک، ایف ایس سی، آئی سی ایس، آئی کام اور ایف اے میں محدود نشستیں۔ ذہین طلباء کے لیے وظائف دستیاب۔</p>
+      </div>
+      <div class="cta-right">
+        <a href="#contact" class="cta-btn-gold">APPLY NOW →</a>
+        <a href="tel:+923000000000" class="cta-btn-outline">Call · 0300-0000000</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ALUMNI STORIES ========== -->
+<section class="alumni-section">
+  <div class="container">
+    <div class="alumni-top">
+      <div class="alumni-left fade-up">
+        <p class="eyebrow-text">ALUMNI · WHERE THEY ARE TODAY</p>
+        <h2 class="serif-title">Stories that<br><em class="maroon-italic">begin at Alpha.</em></h2>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="alumni-urdu">کوٹ مومن کے کلاس رومز سے ملک بھر کے ہسپتالوں اور دفاتر تک پھیلے ہوئے ہمارے فخر۔</p>
+      </div>
+      <div class="alumni-right fade-up">
+        <p class="alumni-desc">From classrooms in Kot Momin to operating rooms, engineering sites, and tech firms across the country — meet the alumni who carry the Alpha legacy forward.</p>
+      </div>
+    </div>
+    <div class="alumni-grid">
+
+      <div class="alumni-card fade-up">
+        <div class="alumni-img-wrap">
+          <img src="images/aluminis/1.jpg" alt="Alumni 1" class="alumni-img">
+          <span class="alumni-class">CLASS OF 2018</span>
+        </div>
+        <blockquote class="alumni-quote">"Alpha College gave me the foundation I needed. The teachers don't just teach subjects — they shape your thinking."</blockquote>
+        <p class="alumni-quote-urdu">"الفا کالج نے مجھے وہ بنیادی جس کی مجھے ضرورت تھی — یہاں کے اساتذہ صرف مضمون نہیں پڑھاتے بلکہ سوچ سکھاتے ہیں۔"</p>
+        <div class="alumni-info">
+          <strong>Dr. Ali Hassan</strong>
+          <span>MBBS — Services Hospital, Lahore</span>
+        </div>
+      </div>
+
+      <div class="alumni-card fade-up">
+        <div class="alumni-img-wrap">
+          <img src="images/aluminis/2.jpg" alt="Alumni 2" class="alumni-img">
+          <span class="alumni-class">CLASS OF 2019</span>
+        </div>
+        <blockquote class="alumni-quote">"From a small town to a leading engineering firm — the journey was possible because Alpha believed in me before I believed in myself."</blockquote>
+        <p class="alumni-quote-urdu">"ایک چھوٹے قصبے سے انجینئرنگ فرم تک — یہ سفر اس لیے ممکن ہوا کیونکہ الفا نے مجھ پر یقین کیا۔"</p>
+        <div class="alumni-info">
+          <strong>Eng. Sana Malik</strong>
+          <span>Civil Engineer — NHA Pakistan</span>
+        </div>
+      </div>
+
+      <div class="alumni-card fade-up">
+        <div class="alumni-img-wrap">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Alumni 3" class="alumni-img">
+          <span class="alumni-class">CLASS OF 2020</span>
+        </div>
+        <blockquote class="alumni-quote">"The ICS program at Alpha was my launchpad. Hands-on labs and mentors who care made all the difference."</blockquote>
+        <p class="alumni-quote-urdu">"الفا کے آئی سی ایس پروگرام نے میرے لیے لانچ پیڈ کا کام کیا۔ لیبز اور رہنمائی نے سب کچھ بدل دیا۔"</p>
+        <div class="alumni-info">
+          <strong>Usman Raza</strong>
+          <span>Software Engineer — Systems Ltd</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FACULTY SECTION ========== -->
+<section id="faculty" class="faculty-section">
+  <div class="container">
+    <div class="faculty-top">
+      <div class="faculty-left fade-up">
+        <p class="eyebrow-text">THE PEOPLE BEHIND ALPHA</p>
+        <h2 class="serif-title">Faculty<br><em class="maroon-italic">who care.</em></h2>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">اردو</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="faculty-urdu">تجربہ کار، اہل اور پر عزم اساتذہ — جو ہر طالب علم کی کامیابی کے ضامن ہیں۔</p>
+      </div>
+      <div class="faculty-right fade-up">
+        <p class="faculty-desc">Decades of combined experience, deep subject expertise, and an unwavering commitment to every student's success — meet the educators who make Alpha, Alpha.</p>
+      </div>
+    </div>
+    <div class="faculty-grid">
+
+      <div class="faculty-card fade-up">
+        <div class="faculty-img-wrap">
+          <img src="images/Professors/Islamic.jpg" alt="Faculty" class="faculty-img">
+          <span class="faculty-exp">18 YRS</span>
+        </div>
+        <div class="faculty-info">
+          <h4>Prof. Zeeshan Nafees</h4>
+          <p>M.A Islamic Studies</p>
+       
+        </div>
+      </div>
+
+      <div class="faculty-card fade-up">
+        <div class="faculty-img-wrap">
+          <img src="images/Professors/m.a english.jpg" alt="Faculty" class="faculty-img">
+          <span class="faculty-exp">14 YRS</span>
+        </div>
+        <div class="faculty-info">
+          <h4>Pro. Samra Firdous</h4>
+          <p>M.A English</p>
+          <span>Silver Medlist</span>
+        </div>
+      </div>
+
+      <div class="faculty-card fade-up">
+        <div class="faculty-img-wrap">
+          <img src="images/Professors/ma edu.jpg" alt="Faculty" class="faculty-img">
+          <span class="faculty-exp">10 YRS</span>
+        </div>
+        <div class="faculty-info">
+          <h4>Prof. Aqeela Rani</h4>
+          <p>M.A Education</p>
+          <span>10 Years of teaching experience</span>
+        </div>
+      </div>
+
+      <div class="faculty-card fade-up">
+        <div class="faculty-img-wrap">
+          <img src="images/Professors/mphil phy-chi.jpg" alt="Faculty" class="faculty-img">
+          <span class="faculty-exp">12 YRS</span>
+        </div>
+        <div class="faculty-info">
+          <h4>  Prof. Nayyar Sultana</h4>
+          <p>M.Phil Physical Chemistry</p>
+          <span>05 Years of teaching experience</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CAMPUS LIFE ========== -->
+<section id="campus" class="campus-section">
+  <div class="container">
+    <div class="campus-header fade-up">
+      <p class="eyebrow-text">BEYOND THE CLASSROOM</p>
+      <h2 class="serif-title large-title centered-title">A campus<br><em class="maroon-italic">truly alive.</em></h2>
+      <div class="urdu-divider centered">
+        <span class="u-line"></span>
+        <span class="u-label">طلباء کی سرگرمیاں</span>
+        <span class="u-line"></span>
+      </div>
+    </div>
+    <div class="campus-grid">
+
+      <div class="campus-card fade-up" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80')">
+        <div class="campus-overlay"></div>
+        <div class="campus-content">
+          <span class="campus-num">— 01</span>
+          <h3>Sports & Athletics</h3>
+          <p>Annual sports gala featuring cricket, football, and athletics.</p>
+          <div class="campus-urdu-wrap">
+            <span class="campus-u-line"></span>
+          </div>
+          <p class="campus-urdu">کھیل اور اتھلیٹکس</p>
+          <p class="campus-urdu-sub">سالانہ کھیلوں کا میلہ — کرکٹ، فٹبال اور اتھلیٹکس۔</p>
+        </div>
+      </div>
+
+      <div class="campus-card fade-up" style="background-image:url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=700&q=80')">
+        <div class="campus-overlay"></div>
+        <div class="campus-content">
+          <span class="campus-num">— 02</span>
+          <h3>Cultural Festivals</h3>
+          <p>Music, drama, and traditional performances celebrating heritage.</p>
+          <div class="campus-urdu-wrap">
+            <span class="campus-u-line"></span>
+          </div>
+          <p class="campus-urdu">ثقافتی تہوار</p>
+          <p class="campus-urdu-sub">موسیقی، ڈرامہ اور روایتی پرفارمنس — ثقافت کا جشن۔</p>
+        </div>
+      </div>
+
+      <div class="campus-card fade-up" style="background-image:url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700&q=80')">
+        <div class="campus-overlay"></div>
+        <div class="campus-content">
+          <span class="campus-num">— 03</span>
+          <h3>Science Exhibitions</h3>
+          <p>Innovative student projects in our annual science fair.</p>
+          <div class="campus-urdu-wrap">
+            <span class="campus-u-line"></span>
+          </div>
+          <p class="campus-urdu">سائنس کی نمائش</p>
+          <p class="campus-urdu-sub">سالانہ سائنس میلے میں طلباء کے اختراعی پراجیکٹس۔</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-top fade-up">
+      <div class="contact-head-left">
+        <p class="eyebrow-text">VISIT · CONNECT · BELONG</p>
+        <h2 class="serif-title">Find us in<br><em class="maroon-italic">Kot Momin.</em></h2>
+        <div class="urdu-divider">
+          <span class="u-line"></span>
+          <span class="u-label">رابط</span>
+          <span class="u-line"></span>
+        </div>
+        <p class="contact-urdu">ہم آپ کے استقبال کے منتظر ہیں۔</p>
+      </div>
+      <div class="contact-head-right">
+        <p class="contact-invite">We welcome you to walk our halls, meet our faculty, and see the Alpha difference for yourself.</p>
+      </div>
+    </div>
+
+    <div class="contact-body fade-up">
+      <div class="contact-info-box">
+        <div class="contact-detail">
+          <span class="c-icon">📍</span>
+          <div>
+            <p class="c-label">ADDRESS</p>
+            <p class="c-val">Bhalwal Road, Kot Momin, Punjab</p>
+            <p class="c-urdu">بھلوال روڈ، کوٹ مومن، پنجاب</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">📞</span>
+          <div>
+            <p class="c-label">PHONE</p>
+            <p class="c-val">+92 300 0000000</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">✉️</span>
+          <div>
+            <p class="c-label">EMAIL</p>
+            <p class="c-val">info@alphacollege.edu.pk</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="c-icon">🕐</span>
+          <div>
+            <p class="c-label">OFFICE HOURS</p>
+            <p class="c-val">Mon–Sat: 8:00 AM – 3:00 PM</p>
+          </div>
+        </div>
+        <!-- FORM -->
+        <form class="contact-form" id="contactForm" action="includes/contact.php" method="POST">
+          <h3 class="form-title">Send a Message</h3>
+          <div class="form-group">
+            <input type="text"  name="name"    placeholder="Your Full Name" required>
+          </div>
+          <div class="form-group">
+            <input type="tel"   name="phone"   placeholder="Phone Number" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email"   placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <select name="program">
+              <option value="">Interested Program...</option>
+              <option>Pre-Medical (FSc)</option>
+              <option>Pre-Engineering (FSc)</option>
+              <option>ICS · Computer Science</option>
+              <option>I.Com · Commerce</option>
+              <option>FA · Humanities</option>
+              <option>Matric (Science / Arts)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your message..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn">SUBMIT ENQUIRY →</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! We'll contact you soon.</div>
+        </form>
+      </div>
+
+      <div class="map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27277.65!2d73.0271!3d32.1906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391ef1b1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sKot%20Momin%2C%20Punjab!5e0!3m2!1sen!2spk!4v1"
+          class="google-map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="Alpha College" class="footer-logo-img">
+          <div>
+            <div class="footer-logo-name">Alpha College</div>
+            <div class="footer-logo-sub">KOT MOMIN · EST. EXCELLENCE</div>
+          </div>
+        </div>
+        <p class="footer-about">An institution rooted in tradition, designed for tomorrow. Serving Kot Momin with quality education and character building.</p>
+        <p class="footer-urdu">روایت میں جڑی، کل کے لیے تیار۔ کوٹ مومن کی خدمت میں معیاری تعلیم اور کردار سازی کے ساتھ۔</p>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="#programs">Pre-Medical (FSc)</a>
+        <a href="#programs">Pre-Engineering (FSc)</a>
+        <a href="#programs">ICS · Computer Science</a>
+        <a href="#programs">I.Com · Commerce</a>
+        <a href="#programs">FA · Humanities</a>
+        <a href="#programs">Matric</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About Alpha</a>
+        <a href="#faculty">Our Faculty</a>
+        <a href="#campus">Campus Life</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#">📍 Bhalwal Road, Kot Momin</a>
+        <a href="tel:+923000000000">📞 +92 300 0000000</a>
+        <a href="mailto:info@alphacollege.edu.pk">✉️ info@alphacollege.edu.pk</a>
+        <a href="#">💬 WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <strong>Alpha College, Kot Momin</strong>. All rights reserved.</p>
+      <p class="footer-tagline">DREAM HIGH · ACHIEVE HIGHER · BE ALPHA</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923000000000" class="whatsapp-float" target="_blank">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
